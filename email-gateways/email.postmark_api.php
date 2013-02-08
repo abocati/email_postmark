@@ -23,8 +23,8 @@
 			try {
 				$this->validate();
                 
-                $this->setSenderEmailAddress(Symphony::Configuration()->get('from_address', 'email_postmark'));
-                $this->setSenderName(Symphony::Configuration()->get('from_name', 'email_postmark'));
+                		$this->setSenderEmailAddress(Symphony::Configuration()->get('from_address', 'email_postmark'));
+                		$this->setSenderName(Symphony::Configuration()->get('from_name', 'email_postmark'));
 
 				define('POSTMARKAPP_MAIL_FROM_NAME', $this->_sender_name);
 				define('POSTMARKAPP_MAIL_FROM_ADDRESS', $this->_sender_email_address);
